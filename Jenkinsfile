@@ -2,11 +2,11 @@ pipeline {
   agent any	
   stages {
 
-    stage ('BUILD') {
+    stage ('PRINT') {
       steps {
-        echo "This is Build stage" 
+        echo "This is Print stage" 
         sh ''' 
-		sleep 5
+		echo "Hello"
 	        exit 0 
 	   '''
       }  
